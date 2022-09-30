@@ -1,0 +1,947 @@
+* {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: inline-block;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.btnSeeAll {
+    width: 100%;
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSeeAll button {
+    padding: 15px 70px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 100px;
+    font-size: 20px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btnSeeAll button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    max-width: 1300px;
+    background-color: white;
+    padding: 0px 5%;
+}
+
+.logoWeb {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapLogo h4 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Lora", serif;
+    color: #000000;
+}
+
+.searchHome {
+    width: auto;
+    padding-left: 20px;
+}
+
+.searchHome form {
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    height: 3vh;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.searchHome img {
+    width: 20px;
+    padding-right: 10px;
+    padding-left: 6px;
+}
+
+.searchHome input {
+    width: 300px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search input {
+    background-color: rgb(114, 114, 114);
+    padding: 10px 40px;
+    border-radius: 100px;
+    width: 300px;
+    border: none;
+} 
+
+.menu {
+    width: 240px;
+}
+
+.wrapMen ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapMen ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrapMen ul li a {
+    color: black;
+}
+
+.btnSignIn {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnSignIn:hover {
+    background-color: rgb(59, 121, 255);
+    color: white;
+    border: solid 1px rgb(59, 121, 255);
+}
+
+/* End Navbar */
+
+/* Container */
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapBan h1 {
+    font-size: 120px;
+    font-family: "Raleway", serif;
+}
+
+/* End Banner */
+
+/* Iklan */
+
+.iklan {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.wrapIklan {
+    padding: 0px 5%;
+    height: 22vh;
+}
+
+.contIklan {
+    border-radius: 10px;
+    background-image: url(../public/image/bannerHome1.jpg);
+    width: 100%;
+    height: 22vh;
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+/* End Iklan */
+
+/* Catalog */
+
+.catalog {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapCat {
+    width: 1280px;
+}
+
+.contCat ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    color: black;
+}
+
+.contCat ul li {
+    list-style: none;
+}
+
+.contCat ul li a button {
+    padding: 8px 30px;
+    border-radius: 100px;
+    width: 240px;
+    border: solid 1px black;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14.5px;
+}
+
+.contCat ul li a button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* End Catalog */
+
+/* chair  */
+
+.chair {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapChair {
+    padding: 20px 5%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contChair {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 35px;
+}
+
+.contCardChair {
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.contCardChair img {
+    border-radius: 30px;
+}
+
+.descComCat {
+    padding-top: 20px;
+}
+
+.descComCat h4 {
+    font-weight: 100;
+    color: #c5c5c5;
+}
+
+/* end chair  */
+
+/* component  */
+
+.titComponent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0%;
+}
+
+.titComponent h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.component {
+    width: 100%;
+    height: auto;
+}
+
+.wrapComponent {
+    padding: 20px 5%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contComponent {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px;
+    gap: 35px;
+}
+
+.contCardComponent {
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.contCardComponent img {
+    border-radius: 30px;
+}
+
+.descComCat {
+    padding-top: 20px;
+}
+
+.descComCat h4 {
+    font-weight: 500;
+    font-family: "Monstart" serif;
+    color: #aaaaaa;
+}
+
+.descComCat h2 {
+    font-weight: 500;
+    font-family: "Monstart" serif;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.descComCat h1 {
+    font-weight: 500;
+    font-family: "Monstart" serif;
+    color: #000000;
+}
+
+/* end component */
+
+/* End Container */
+
+/* footer */
+
+footer {
+    background-color: #ebebeb;
+    height: 60vh;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.ftr {
+    padding: 50px 5%;
+}
+
+.ftr .logo p {
+    padding-bottom: 50px;
+    font-size: 28px;
+    font-family: "Lora", serif;
+}
+
+.wrapperFootter {
+    padding: 0px 5%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 232px 232px 232px 232px;
+}
+
+.contentFotter {
+    list-style-type: none;
+}
+
+.contentFotter h4 {
+    padding-bottom: 20px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: "Monstart" serif;
+
+}
+
+.contentFotter a {
+    color: #000000;
+    font-family: "Monstart" serif;
+    font-size: 14px;
+}
+
+.contentFotter a p {
+    padding: 5px 0%;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+
+.contentFotter a p:hover {
+    color: white;
+}
+
+/* end footer */
+
+/* Form  */
+
+.btnBack {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.btnBack a {
+    padding: 0px 5%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnBack a img {
+    padding: 10px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.btnBack a img:hover {
+    background-color: #c5c5c5;
+    padding: 10px;
+}
+
+.forum {
+    width: 100%;
+    height: 0px;
+}
+
+.wrappForum {
+    padding: 30px 5%;
+}
+
+.contForum {
+    display: grid;
+    grid-template-columns: 400px 820px;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dafCht {
+    background-color: #efefef;
+    height: 655px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headTitCht {
+    padding-bottom: 15px;
+}
+
+.headTitCht h3 {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Monstart" serif;
+}
+
+.listCht {
+    overflow-y: auto;
+    height: 593px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.search {
+    padding-left: 26px;
+}
+
+.search input {
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 100px;
+    width: 320px;
+    border: none;
+}
+
+.profile img {
+    background-image: url(../publics/human1.jpg);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.textCht {
+    padding-left: 10px;
+}
+
+.roomCht {
+    width: 770px;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.wrapRomCht {
+    width: 770px;
+    overflow-y: auto;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contRomCht {
+    background-color: transparent;
+    border-radius: 10px 10px 0px 0px;
+    height: 625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.colmTyping {
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    padding: 0px 20px;
+    margin-top: 11.5px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.inTyping {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colSearch {
+    padding-bottom: 15px;
+}
+
+.colmSearch input {
+    background-color: white;
+    padding: 4px 20px;
+    width: 530px;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+}
+
+.iconTyping img {
+    width: 27px;
+    height: auto;
+    padding: 0px 2px;
+}
+
+
+/* end forum */
+
+/* Banner About */
+
+.bannerAbout {
+    padding-top: 80px;
+    height: auto;
+    width: 100%;
+}
+
+.contBanAb {
+    background-image: url(../public/image/bannerHome1.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contBanAb h1 {
+    color: white;
+    font-family: "Monstart" serif;
+    font-size: 90px;
+    font-weight: 500;
+}
+
+/* End Banner About  */
+
+
+/* Introduction About  */
+
+.introduc {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.wrapIntro {
+    padding: 0px 5%;
+}
+
+.contIntro {
+    display: grid;
+    grid-template-columns: 850px 400px;
+    grid-template-rows: auto;
+}
+
+.descIntro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 700px;
+    font-family: "Monstart" serif;
+}
+
+.wrapDescIntro {
+    display: grid;
+}
+
+.wrapDescIntro h1 {
+    font-size: 60px;
+    color: #2b2b2b;
+    padding-bottom: 50px;
+    font-family: "Lora" serif;
+}
+
+.wrapDescIntro p {
+    padding: 8px 0px;
+    font-size: 22px;
+}
+
+.teamIntro {
+    width: 100%;
+    height: 800px;
+    background-image: url(../public/image/team.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* End Introduction About  */
+
+/* Visi Misi About  */
+
+.visimisi {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapViMi {
+    padding: 0px 5%;
+}
+
+.contViMi {
+    display: grid;
+    gap: 67px;
+    grid-template-rows: auto;
+}
+
+.visi {
+    padding-top: 20px;
+    font-family: "Monstart" serif;
+}
+
+.visi h2 {
+    font-size: 25px;
+    color: #616161;
+    font-family: "Monstart" serif;
+}
+
+.visi p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Monstart" serif;
+}
+
+.misi {
+    padding: 0px 3px;
+    padding-top: 20px;
+}
+
+.misi h2 {
+    font-size: 25px;
+    color: #616161;
+    font-family: "Monstart" serif;
+}
+
+.misi p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Monstart" serif;
+}
+
+/* End Visi Misi About  */
+
+.locAbout {
+    display: grid;
+    height: 440px;
+    padding: 0px 5%;
+}
+
+/* End Introduction About  */
+
+
+/* Component Product  */
+
+.titAllProd {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.titAllProd h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.wrapAllProd {
+    padding: 20px 5%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contAllProd {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 550px;
+    gap: 35px;
+}
+
+.contCardAllProd {
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.contCardAllProd img {
+    border-radius: 30px;
+}
+
+.descAllProd {
+    padding-top: 20px;
+}
+
+.descAllProd h4 {
+    font-weight: 500;
+    font-family: "Monstart" serif;
+    color: #aaaaaa;
+}
+
+.descAllProd h2 {
+    font-weight: 500;
+    font-family: "Monstart" serif;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.descAllProd h1 {
+    font-weight: 500;
+    font-family: "Monstart" serif;
+    color: #000000;
+}
+
+.descAllProd button {
+    border: none;
+    padding: 3px 14px;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: rgb(61, 145, 255);
+}
+
+.descAllProd button:hover {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+
+
+/* End Component Product */
+
+/* Detail Product */
+
+.detProdDeco {
+    width: 100%;
+    padding: 0;
+}
+
+.wrapProdDeco {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 430px 800px;
+    gap: 50px;
+    align-items: center;
+}
+
+.imgProdDeco {
+    padding: 4% 0px;
+}
+
+.imgProdDeco img {
+    width: 430px;
+    border-radius: 30px;
+}
+
+.contProdDeco {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    height: 53vh;
+    width: 560px;
+    padding-left: 5px;
+}
+
+.contProdDeco h4 {
+    color: #b8b8b8;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contProdDeco h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.contProdDeco h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.contProdDeco p {
+    font-size: 22px;
+}
+
+.profProdDeco {
+    display: flex;
+    align-items: center;
+}
+
+.profProdDeco img {
+    width: 35px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.profProdDeco h3 {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.contProdDeco a button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contProdDeco a button:hover {
+    background-color: rgb(69, 131, 253);
+    color: white;
+}
+
+/* End Detail Product */
+
+
+.modalProd {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContProd {
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+    outline: 0;
+    width: 1100px
+}
+
+.containerProd:after,
+.containerProd:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.containerProd {
+    padding: 0.01em 16px
+}
+
+.w3-span {
+    font-size: 40px;
+    cursor: pointer;
+}
